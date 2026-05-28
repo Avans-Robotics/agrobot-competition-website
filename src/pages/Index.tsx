@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import VideoHero from "@/components/VideoHero";
+import LandingCarousel from "@/components/LandingCarousel";
 import { landingImages } from "@/lib/images";
 import { Users, Cpu, Trophy, Lightbulb } from "lucide-react";
 
@@ -68,26 +69,23 @@ const Index = () => {
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-10">
             {t("home.impressionTitle")}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {landingImages.length > 0
-              ? landingImages.map((img, i) => (
-                  <div
-                    key={i}
-                    className="aspect-[4/3] rounded-lg bg-muted border border-border overflow-hidden"
-                  >
-                    <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover" />
-                  </div>
-                ))
-              : impressionCaptions.map((caption, i) => (
-                  <div
-                    key={i}
-                    className="aspect-[4/3] rounded-lg bg-muted border border-border flex items-center justify-center"
-                  >
-                    <span className="text-muted-foreground text-sm text-center px-4">📷 {caption}</span>
-                  </div>
-                ))}
-          </div>
         </div>
+        {landingImages.length > 0 ? (
+          <LandingCarousel images={landingImages} label={t("home.impressionTitle")} />
+        ) : (
+          <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {impressionCaptions.map((caption, i) => (
+                <div
+                  key={i}
+                  className="aspect-[4/3] rounded-lg bg-muted border border-border flex items-center justify-center"
+                >
+                  <span className="text-muted-foreground text-sm text-center px-4">📷 {caption}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       {/* CTA */}
