@@ -116,4 +116,8 @@ browser-language detection, and keeps `<html lang>` in sync. Language toggle UI 
   `home.impressions` / each edition's `gallery` (locale JSON). See
   `src/assets/images/README.md`. Images live under `src/assets` (not `public/`) because Vite
   only globs/bundles files in the module graph.
+- The homepage impression images render through `src/components/LandingCarousel.tsx` — an
+  Embla "coverflow" carousel (infinite loop; centre slide is full-size, neighbours scale
+  down / fade / blur toward the edges). Click a side image to centre it; click the centre to
+  open it large in a lightbox. The editions galleries still use a simple grid.
 - Forms (register, contact) are front-end only — they show a toast, no submission backend.
