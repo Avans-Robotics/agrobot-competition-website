@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "rules": "Regels & Programma",
+    "editions": "Eerdere edities",
     "register": "Inschrijven",
     "faq": "FAQ",
     "contact": "Contact",
@@ -97,6 +98,37 @@
     "downloadsText": "Download het volledige reglement en het programmaboekje.",
     "regulationsPdf": "Reglement (PDF)",
     "programBookletPdf": "Programmaboekje (PDF)"
+  },
+  "editions": {
+    "heroTitle": "Eerdere edities",
+    "heroSubtitle": "Een terugblik op de deelnemende teams, de winnaars en de hoogtepunten van afgelopen jaren.",
+    "winnerLabel": "Winnaar",
+    "teamsLabel": "Deelnemende teams",
+    "galleryLabel": "Beeldmateriaal",
+    "placeholderNote": "Voorbeeldinhoud — vervang de teams, winnaars en foto's door de echte gegevens.",
+    "list": [
+      {
+        "year": "2025",
+        "tagline": "Recordaantal teams en de eerste volledig autonome oogstrobot op het veld.",
+        "winner": { "team": "Team HarvestHawks", "project": "Autonome aspergesteker met camerageleiding" },
+        "teams": ["HarvestHawks", "FieldForce", "AgroMinds", "RootRunners", "CropCircuit", "SoilSquad", "GreenGears", "TerraBotics"],
+        "gallery": ["Winnend team HarvestHawks", "Robots op het testveld", "Finale op de competitiedag", "Publiek en jury"]
+      },
+      {
+        "year": "2024",
+        "tagline": "Het jaar van precisie-onkruidbestrijding en realtime gewasdetectie.",
+        "winner": { "team": "Team WeedWarriors", "project": "Laser-onkruidbestrijder met realtime detectie" },
+        "teams": ["WeedWarriors", "AgroMinds", "FarmPilot", "BotanyBots", "FieldForce", "Harvesters United"],
+        "gallery": ["Winnend team WeedWarriors", "Onkruiddetectie in actie", "Teams aan het bouwen"]
+      },
+      {
+        "year": "2023",
+        "tagline": "De allereerste editie van de Agrobotcompetitie.",
+        "winner": { "team": "Team SeedSowers", "project": "Autonome zaaimachine voor rijenteelt" },
+        "teams": ["SeedSowers", "RoboReapers", "AgriAces", "PlantPioneers", "FieldForce"],
+        "gallery": ["Winnend team SeedSowers", "De eerste competitiedag", "Robots in het veld"]
+      }
+    ]
   },
   "faq": {
     "heroTitle": "Veelgestelde vragen",

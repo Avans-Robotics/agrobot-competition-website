@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "rules": "Rules & Programme",
+    "editions": "Previous editions",
     "register": "Register",
     "faq": "FAQ",
     "contact": "Contact",
@@ -97,6 +98,37 @@
     "downloadsText": "Download the full regulations and the programme booklet.",
     "regulationsPdf": "Regulations (PDF)",
     "programBookletPdf": "Programme booklet (PDF)"
+  },
+  "editions": {
+    "heroTitle": "Previous editions",
+    "heroSubtitle": "A look back at the participating teams, the winners and the highlights of past years.",
+    "winnerLabel": "Winner",
+    "teamsLabel": "Participating teams",
+    "galleryLabel": "Footage",
+    "placeholderNote": "Placeholder content — replace the teams, winners and photos with the real data.",
+    "list": [
+      {
+        "year": "2025",
+        "tagline": "A record number of teams and the first fully autonomous harvesting robot in the field.",
+        "winner": { "team": "Team HarvestHawks", "project": "Autonomous asparagus harvester with camera guidance" },
+        "teams": ["HarvestHawks", "FieldForce", "AgroMinds", "RootRunners", "CropCircuit", "SoilSquad", "GreenGears", "TerraBotics"],
+        "gallery": ["Winning team HarvestHawks", "Robots on the test field", "Final on competition day", "Crowd and jury"]
+      },
+      {
+        "year": "2024",
+        "tagline": "The year of precision weed control and real-time crop detection.",
+        "winner": { "team": "Team WeedWarriors", "project": "Laser weeder with real-time detection" },
+        "teams": ["WeedWarriors", "AgroMinds", "FarmPilot", "BotanyBots", "FieldForce", "Harvesters United"],
+        "gallery": ["Winning team WeedWarriors", "Weed detection in action", "Teams building"]
+      },
+      {
+        "year": "2023",
+        "tagline": "The very first edition of the Agrobot Competition.",
+        "winner": { "team": "Team SeedSowers", "project": "Autonomous row-crop seeder" },
+        "teams": ["SeedSowers", "RoboReapers", "AgriAces", "PlantPioneers", "FieldForce"],
+        "gallery": ["Winning team SeedSowers", "The first competition day", "Robots in the field"]
+      }
+    ]
   },
   "faq": {
     "heroTitle": "Frequently asked questions",
