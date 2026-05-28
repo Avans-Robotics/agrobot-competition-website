@@ -20,6 +20,7 @@ A file at `public/images/editions/2025/winner.jpg` is referenced as
 - Format: **JPG** or **WebP**; ~1280×720 px (16:9 matches the gallery tiles); **< 300 KB** each.
 - Descriptive lowercase-kebab filenames.
 
-> Note: the gallery currently renders placeholder caption tiles from each edition's
-> `gallery` array in `src/i18n/locales/{nl,en}.json`. To show real images, the `gallery`
-> entries (and the component) need to carry an image path (ask Claude to wire this up).
+> To show a real image, set the `src` of an entry in that edition's `gallery` array in
+> `src/i18n/locales/{nl,en}.json`, e.g.
+> `{ "src": "/images/editions/2025/winner.jpg", "alt": "Winning team" }`.
+> Leave `src` empty (`""`) to keep the placeholder caption tile.

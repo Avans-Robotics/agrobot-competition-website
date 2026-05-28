@@ -11,7 +11,7 @@ const featureIcons = [Users, Cpu, Trophy, Lightbulb];
 const Index = () => {
   const { t } = useTranslation();
   const features = t("home.features", { returnObjects: true }) as { title: string; description: string }[];
-  const impressions = t("home.impressions", { returnObjects: true }) as string[];
+  const impressions = t("home.impressions", { returnObjects: true }) as { src?: string; alt: string }[];
 
   return (
     <>
@@ -68,12 +68,16 @@ const Index = () => {
             {t("home.impressionTitle")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {impressions.map((alt, i) => (
+            {impressions.map((img, i) => (
               <div
                 key={i}
-                className="aspect-[4/3] rounded-lg bg-muted border border-border flex items-center justify-center"
+                className="aspect-[4/3] rounded-lg bg-muted border border-border overflow-hidden flex items-center justify-center"
               >
-                <span className="text-muted-foreground text-sm text-center px-4">📷 {alt}</span>
+                {img.src ? (
+                  <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover" />
+                ) : (
+                  <span className="text-muted-foreground text-sm text-center px-4">📷 {img.alt}</span>
+                )}
               </div>
             ))}
           </div>

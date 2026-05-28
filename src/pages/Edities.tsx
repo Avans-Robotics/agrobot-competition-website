@@ -9,7 +9,7 @@ type Edition = {
   tagline: string;
   winner: { team: string; project: string };
   teams: string[];
-  gallery: string[];
+  gallery: { src?: string; alt: string }[];
 };
 
 const Edities = () => {
@@ -79,12 +79,16 @@ const Edities = () => {
                 <div>
                   <h3 className="font-heading text-lg font-bold mb-4">{t("editions.galleryLabel")}</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    {ed.gallery.map((alt, i) => (
+                    {ed.gallery.map((img, i) => (
                       <div
                         key={i}
-                        className="aspect-video rounded-lg bg-muted border border-border flex items-center justify-center"
+                        className="aspect-video rounded-lg bg-muted border border-border overflow-hidden flex items-center justify-center"
                       >
-                        <span className="text-muted-foreground text-sm text-center px-3">📷 {alt}</span>
+                        {img.src ? (
+                          <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover" />
+                        ) : (
+                          <span className="text-muted-foreground text-sm text-center px-3">📷 {img.alt}</span>
+                        )}
                       </div>
                     ))}
                   </div>

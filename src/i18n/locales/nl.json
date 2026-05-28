@@ -41,9 +41,9 @@
     "videoSubtitle": "Ontdek wat eerdere deelnemers hebben gebouwd en ervaren.",
     "impressionTitle": "Sfeerimpressie",
     "impressions": [
-      "Studenten werken aan hun robot",
-      "Robot op het landbouwveld",
-      "Teamwork tijdens de competitie"
+      { "src": "", "alt": "Studenten werken aan hun robot" },
+      { "src": "", "alt": "Robot op het landbouwveld" },
+      { "src": "", "alt": "Teamwork tijdens de competitie" }
     ],
     "ctaTitle": "Klaar om mee te doen?",
     "ctaText": "Schrijf je vandaag nog in en word onderdeel van de Agrobotcompetitie. De toekomst van landbouw begint bij jou!",
@@ -112,21 +112,34 @@
         "tagline": "Recordaantal teams en de eerste volledig autonome oogstrobot op het veld.",
         "winner": { "team": "Team HarvestHawks", "project": "Autonome aspergesteker met camerageleiding" },
         "teams": ["HarvestHawks", "FieldForce", "AgroMinds", "RootRunners", "CropCircuit", "SoilSquad", "GreenGears", "TerraBotics"],
-        "gallery": ["Winnend team HarvestHawks", "Robots op het testveld", "Finale op de competitiedag", "Publiek en jury"]
+        "gallery": [
+          { "src": "", "alt": "Winnend team HarvestHawks" },
+          { "src": "", "alt": "Robots op het testveld" },
+          { "src": "", "alt": "Finale op de competitiedag" },
+          { "src": "", "alt": "Publiek en jury" }
+        ]
       },
       {
         "year": "2024",
         "tagline": "Het jaar van precisie-onkruidbestrijding en realtime gewasdetectie.",
         "winner": { "team": "Team WeedWarriors", "project": "Laser-onkruidbestrijder met realtime detectie" },
         "teams": ["WeedWarriors", "AgroMinds", "FarmPilot", "BotanyBots", "FieldForce", "Harvesters United"],
-        "gallery": ["Winnend team WeedWarriors", "Onkruiddetectie in actie", "Teams aan het bouwen"]
+        "gallery": [
+          { "src": "", "alt": "Winnend team WeedWarriors" },
+          { "src": "", "alt": "Onkruiddetectie in actie" },
+          { "src": "", "alt": "Teams aan het bouwen" }
+        ]
       },
       {
         "year": "2023",
         "tagline": "De allereerste editie van de Agrobotcompetitie.",
         "winner": { "team": "Team SeedSowers", "project": "Autonome zaaimachine voor rijenteelt" },
         "teams": ["SeedSowers", "RoboReapers", "AgriAces", "PlantPioneers", "FieldForce"],
-        "gallery": ["Winnend team SeedSowers", "De eerste competitiedag", "Robots in het veld"]
+        "gallery": [
+          { "src": "", "alt": "Winnend team SeedSowers" },
+          { "src": "", "alt": "De eerste competitiedag" },
+          { "src": "", "alt": "Robots in het veld" }
+        ]
       }
     ]
   },

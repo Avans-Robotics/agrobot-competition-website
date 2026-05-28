@@ -108,5 +108,8 @@ browser-language detection, and keeps `<html lang>` in sync. Language toggle UI 
 - **Previous editions** (`/edities`) and the **two competition tracks** (Engineering / AI,
   on `/regels`) use **placeholder content** — fictional team names, winners, project
   descriptions and image-gallery captions. Replace with real data in the locale JSON.
-  Edition footage is currently placeholder image tiles, not real images/video.
+- **Images**: home impressions (`home.impressions`) and edition galleries
+  (`editions.list[].gallery`) are arrays of `{ src, alt }`. A real photo shows when `src` is
+  set (e.g. `/images/landing/x.jpg` or `/images/editions/2025/x.jpg`); an empty `src` falls
+  back to a 📷 caption tile. Drop files under `public/images/` (see READMEs there).
 - Forms (register, contact) are front-end only — they show a toast, no submission backend.
