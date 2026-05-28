@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import VideoHero from "@/components/VideoHero";
 import { Users, Cpu, Trophy, Lightbulb } from "lucide-react";
 
 const features = [
@@ -29,33 +30,8 @@ const features = [
 
 const Index = () => (
   <>
-    {/* Hero */}
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-agrobot-mid to-primary py-24 md:py-36">
-      <div className="absolute inset-0 opacity-10" style={{
-        backgroundImage: "radial-gradient(circle at 20% 50%, hsl(163 70% 50% / 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(155 80% 60% / 0.2) 0%, transparent 40%)",
-      }} />
-      <div className="container relative z-10 text-center">
-        <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
-          Doe mee aan de<br />
-          <span className="text-agrobot-mint">Agrobotcompetitie</span>
-        </h1>
-        <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-10">
-          Bouw de landbouwrobot van de toekomst. Leer, innoveer en win — samen met jouw team.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/inschrijven">
-            <Button size="lg" className="bg-agrobot-mint text-agrobot-dark hover:bg-agrobot-light font-bold text-base px-8">
-              Schrijf je in
-            </Button>
-          </Link>
-          <Link to="/regels">
-            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-semibold text-base px-8">
-              Meer info
-            </Button>
-          </Link>
-        </div>
-      </div>
-    </section>
+    {/* Hero met video-achtergrond */}
+    <VideoHero />
 
     {/* Waarom meedoen */}
     <section className="py-20 bg-background">
