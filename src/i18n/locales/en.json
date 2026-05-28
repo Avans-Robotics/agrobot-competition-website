@@ -101,10 +101,7 @@
           { "q": "How do I prepare?", "a": "Sign up for a relevant minor and join the kickoff workshops. There you'll learn everything you need." }
         ]
       }
-    ],
-    "inspirationTitle": "Inspiration",
-    "inspirationText": "Watch videos and images from previous editions.",
-    "gallery": ["Winning team 2025", "Robots in action"]
+    ]
   },
   "register": {
     "heroTitlePrefix": "Register for the",

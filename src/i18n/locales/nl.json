@@ -101,10 +101,7 @@
           { "q": "Hoe bereid ik me voor?", "a": "Schrijf je in voor een relevante minor en neem deel aan de kickoff-workshops. Daar leer je alles wat je nodig hebt." }
         ]
       }
-    ],
-    "inspirationTitle": "Inspiratie",
-    "inspirationText": "Bekijk video's en beelden van eerdere edities.",
-    "gallery": ["Winnend team 2025", "Robots in actie"]
+    ]
   },
   "register": {
     "heroTitlePrefix": "Schrijf je in voor de",
