@@ -4,8 +4,8 @@ Plaats hier de achtergrondvideo voor de homepage.
 
 ## Verwacht bestand
 
-- **Bestandsnaam:** `hero.mp4`
-- Wordt in de code aangeroepen als `/videos/hero.mp4` (zie `src/components/VideoHero.tsx`).
+- **Bestandsnaam:** `hero-web.mp4` (de voor het web gecomprimeerde versie).
+- Wordt in de code aangeroepen als `/videos/hero-web.mp4` (zie `src/components/VideoHero.tsx`).
 
 ## Aanbevolen specificaties
 
@@ -23,5 +23,5 @@ component via de `poster`-prop. Deze wordt getoond terwijl de video laadt.
 ## Tips om te comprimeren (met ffmpeg)
 
 ```bash
-ffmpeg -i bron.mp4 -vf "scale=1920:-2" -c:v libx264 -crf 26 -preset slow -an hero.mp4
+ffmpeg -i bron.mp4 -vf "scale=1280:-2,fps=24" -c:v libx264 -crf 30 -preset slow -an -movflags +faststart hero-web.mp4
 ```

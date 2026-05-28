@@ -14,7 +14,7 @@ interface VideoHeroProps {
  * De video blijft in beeld terwijl je door deze sectie scrollt, en de
  * tekstblokken schuiven er overheen — meteen vanaf de bovenkant.
  */
-const VideoHero = ({ videoSrc = "/videos/hero.mp4", poster }: VideoHeroProps) => (
+const VideoHero = ({ videoSrc = "/videos/hero-web.mp4", poster }: VideoHeroProps) => (
   <section className="relative -mt-16">
     {/* Vastgezette video-laag: blijft in beeld zolang je door de sectie scrollt.
         De gradient dient als nette fallback voordat de video laadt of als die ontbreekt. */}
