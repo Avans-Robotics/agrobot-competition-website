@@ -41,9 +41,9 @@
     "videoSubtitle": "Discover what previous participants built and experienced.",
     "impressionTitle": "Impression",
     "impressions": [
-      { "src": "", "alt": "Students working on their robot" },
-      { "src": "", "alt": "Robot in the field" },
-      { "src": "", "alt": "Teamwork during the competition" }
+      "Students working on their robot",
+      "Robot in the field",
+      "Teamwork during the competition"
     ],
     "ctaTitle": "Ready to join?",
     "ctaText": "Sign up today and become part of the Agrobot Competition. The future of agriculture starts with you!",
@@ -112,34 +112,21 @@
         "tagline": "A record number of teams and the first fully autonomous harvesting robot in the field.",
         "winner": { "team": "Team HarvestHawks", "project": "Autonomous asparagus harvester with camera guidance" },
         "teams": ["HarvestHawks", "FieldForce", "AgroMinds", "RootRunners", "CropCircuit", "SoilSquad", "GreenGears", "TerraBotics"],
-        "gallery": [
-          { "src": "", "alt": "Winning team HarvestHawks" },
-          { "src": "", "alt": "Robots on the test field" },
-          { "src": "", "alt": "Final on competition day" },
-          { "src": "", "alt": "Crowd and jury" }
-        ]
+        "gallery": ["Winning team HarvestHawks", "Robots on the test field", "Final on competition day", "Crowd and jury"]
       },
       {
         "year": "2024",
         "tagline": "The year of precision weed control and real-time crop detection.",
         "winner": { "team": "Team WeedWarriors", "project": "Laser weeder with real-time detection" },
         "teams": ["WeedWarriors", "AgroMinds", "FarmPilot", "BotanyBots", "FieldForce", "Harvesters United"],
-        "gallery": [
-          { "src": "", "alt": "Winning team WeedWarriors" },
-          { "src": "", "alt": "Weed detection in action" },
-          { "src": "", "alt": "Teams building" }
-        ]
+        "gallery": ["Winning team WeedWarriors", "Weed detection in action", "Teams building"]
       },
       {
         "year": "2023",
         "tagline": "The very first edition of the Agrobot Competition.",
         "winner": { "team": "Team SeedSowers", "project": "Autonomous row-crop seeder" },
         "teams": ["SeedSowers", "RoboReapers", "AgriAces", "PlantPioneers", "FieldForce"],
-        "gallery": [
-          { "src": "", "alt": "Winning team SeedSowers" },
-          { "src": "", "alt": "The first competition day" },
-          { "src": "", "alt": "Robots in the field" }
-        ]
+        "gallery": ["Winning team SeedSowers", "The first competition day", "Robots in the field"]
       }
     ]
   },

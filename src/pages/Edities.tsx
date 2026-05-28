@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { editionImages } from "@/lib/images";
 import { Trophy, Users } from "lucide-react";
 
 type Edition = {
@@ -9,7 +10,7 @@ type Edition = {
   tagline: string;
   winner: { team: string; project: string };
   teams: string[];
-  gallery: { src?: string; alt: string }[];
+  gallery: string[];
 };
 
 const Edities = () => {
@@ -40,7 +41,9 @@ const Edities = () => {
               ))}
             </TabsList>
 
-            {editions.map((ed) => (
+            {editions.map((ed) => {
+              const galleryImages = editionImages(ed.year);
+              return (
               <TabsContent key={ed.year} value={ed.year} className="space-y-10">
                 <p className="text-center text-muted-foreground max-w-2xl mx-auto">{ed.tagline}</p>
 
@@ -79,22 +82,28 @@ const Edities = () => {
                 <div>
                   <h3 className="font-heading text-lg font-bold mb-4">{t("editions.galleryLabel")}</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    {ed.gallery.map((img, i) => (
-                      <div
-                        key={i}
-                        className="aspect-video rounded-lg bg-muted border border-border overflow-hidden flex items-center justify-center"
-                      >
-                        {img.src ? (
-                          <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover" />
-                        ) : (
-                          <span className="text-muted-foreground text-sm text-center px-3">📷 {img.alt}</span>
-                        )}
-                      </div>
-                    ))}
+                    {galleryImages.length > 0
+                      ? galleryImages.map((img, i) => (
+                          <div
+                            key={i}
+                            className="aspect-video rounded-lg bg-muted border border-border overflow-hidden"
+                          >
+                            <img src={img.src} alt={img.alt} loading="lazy" className="h-full w-full object-cover" />
+                          </div>
+                        ))
+                      : ed.gallery.map((caption, i) => (
+                          <div
+                            key={i}
+                            className="aspect-video rounded-lg bg-muted border border-border flex items-center justify-center"
+                          >
+                            <span className="text-muted-foreground text-sm text-center px-3">📷 {caption}</span>
+                          </div>
+                        ))}
                   </div>
                 </div>
               </TabsContent>
-            ))}
+              );
+            })}
           </Tabs>
 
           <p className="text-center text-xs text-muted-foreground/70 mt-12">{t("editions.placeholderNote")}</p>

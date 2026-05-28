@@ -108,8 +108,12 @@ browser-language detection, and keeps `<html lang>` in sync. Language toggle UI 
 - **Previous editions** (`/edities`) and the **two competition tracks** (Engineering / AI,
   on `/regels`) use **placeholder content** — fictional team names, winners, project
   descriptions and image-gallery captions. Replace with real data in the locale JSON.
-- **Images**: home impressions (`home.impressions`) and edition galleries
-  (`editions.list[].gallery`) are arrays of `{ src, alt }`. A real photo shows when `src` is
-  set (e.g. `/images/landing/x.jpg` or `/images/editions/2025/x.jpg`); an empty `src` falls
-  back to a 📷 caption tile. Drop files under `public/images/` (see READMEs there).
+- **Images (auto-loaded)**: drop files into `src/assets/images/landing/` or
+  `src/assets/images/editions/<year>/` and they render automatically — no filename lists to
+  maintain. `src/lib/images.ts` globs those folders via `import.meta.glob`; alt text is
+  derived from the filename and images are ordered by filename (prefix with `01-`, `02-` to
+  control order). When a folder has no images, the page falls back to the 📷 caption tiles in
+  `home.impressions` / each edition's `gallery` (locale JSON). See
+  `src/assets/images/README.md`. Images live under `src/assets` (not `public/`) because Vite
+  only globs/bundles files in the module graph.
 - Forms (register, contact) are front-end only — they show a toast, no submission backend.
