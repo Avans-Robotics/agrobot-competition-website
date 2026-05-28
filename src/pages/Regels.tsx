@@ -1,13 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, CheckCircle, Calendar, ClipboardList, Flag, Award } from "lucide-react";
+import { Download, CheckCircle, Calendar, ClipboardList, Flag, Award, Wrench, BrainCircuit } from "lucide-react";
 
 const timelineIcons = [ClipboardList, Calendar, Flag, Award];
+const trackIcons = [Wrench, BrainCircuit];
 
 const Regels = () => {
   const { t } = useTranslation();
   const timeline = t("rules.timeline", { returnObjects: true }) as { title: string; period: string; desc: string }[];
+  const tracks = t("rules.tracks", { returnObjects: true }) as { name: string; goal: string; rules: string[] }[];
   const rules = t("rules.rulesList", { returnObjects: true }) as string[];
 
   return (
@@ -20,6 +22,40 @@ const Regels = () => {
           <p className="text-primary-foreground/80 max-w-xl mx-auto">
             {t("rules.heroSubtitle")}
           </p>
+        </div>
+      </section>
+
+      {/* Tracks */}
+      <section className="py-20 bg-muted">
+        <div className="container">
+          <h2 className="font-heading text-3xl font-bold text-center mb-4">{t("rules.tracksTitle")}</h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">{t("rules.tracksSubtitle")}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {tracks.map((track, i) => {
+              const Icon = trackIcons[i];
+              return (
+                <Card key={i} className="border-border hover:shadow-lg transition-shadow">
+                  <CardContent className="p-8">
+                    <div className="w-14 h-14 rounded-full bg-accent/15 flex items-center justify-center mb-5">
+                      <Icon className="h-7 w-7 text-accent" />
+                    </div>
+                    <h3 className="font-heading text-2xl font-bold mb-4">{track.name}</h3>
+                    <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-1">{t("rules.trackGoalLabel")}</p>
+                    <p className="text-sm text-muted-foreground mb-6">{track.goal}</p>
+                    <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-3">{t("rules.trackRulesLabel")}</p>
+                    <ul className="space-y-3">
+                      {track.rules.map((rule, j) => (
+                        <li key={j} className="flex gap-3 items-start">
+                          <CheckCircle className="h-5 w-5 text-accent mt-0.5 shrink-0" />
+                          <span className="text-sm">{rule}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
         </div>
       </section>
 

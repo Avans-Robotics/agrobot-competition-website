@@ -51,6 +51,32 @@
   "rules": {
     "heroTitle": "Rules & Programme",
     "heroSubtitle": "Everything you need to know about the setup, the programme and the rules of the Agrobot Competition.",
+    "tracksTitle": "Two tracks to compete in",
+    "tracksSubtitle": "Choose the track that fits your team best. Each track has its own goal and its own rules.",
+    "trackGoalLabel": "Goal",
+    "trackRulesLabel": "Rules",
+    "tracks": [
+      {
+        "name": "Engineering competition",
+        "goal": "Build a robust, autonomous agricultural robot that reliably performs a physical field task — from navigation to mechanical execution.",
+        "rules": [
+          "The robot completes a course on the test field fully autonomously.",
+          "Mechanical design, reliability and safety carry the most weight in the assessment.",
+          "A maximum weight of 50 kg and use of standard safety equipment is mandatory.",
+          "Teams document their design and build process in a technical report."
+        ]
+      },
+      {
+        "name": "AI competition",
+        "goal": "Develop the smartest algorithm for an agricultural challenge — think crop recognition, weed detection or yield prediction.",
+        "rules": [
+          "Submissions are evaluated on a shared dataset and a hidden test set.",
+          "Model accuracy, generalisation and efficiency determine the score.",
+          "Data, code and trained models used must be delivered reproducibly.",
+          "Pre-trained models are allowed, provided the source is clearly cited."
+        ]
+      }
+    ],
     "programTitle": "Programme overview",
     "timeline": [
       { "title": "Registration", "period": "September – October", "desc": "Register your team and choose your minor." },

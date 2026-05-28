@@ -51,6 +51,32 @@
   "rules": {
     "heroTitle": "Regels & Programma",
     "heroSubtitle": "Alles wat je moet weten over de opzet, het programma en de spelregels van de Agrobotcompetitie.",
+    "tracksTitle": "Twee tracks om aan mee te doen",
+    "tracksSubtitle": "Kies de track die het beste bij jouw team past. Elke track heeft een eigen doel en eigen spelregels.",
+    "trackGoalLabel": "Doel",
+    "trackRulesLabel": "Spelregels",
+    "tracks": [
+      {
+        "name": "Engineering-competitie",
+        "goal": "Bouw een robuuste, autonome landbouwrobot die een fysieke veldtaak betrouwbaar uitvoert — van navigatie tot mechanische uitvoering.",
+        "rules": [
+          "De robot legt volledig autonoom een parcours op het testveld af.",
+          "Mechanisch ontwerp, betrouwbaarheid en veiligheid wegen het zwaarst in de beoordeling.",
+          "Een maximaal gewicht van 50 kg en gebruik van standaard veiligheidsmiddelen is verplicht.",
+          "Teams documenteren hun ontwerp- en bouwproces in een technisch verslag."
+        ]
+      },
+      {
+        "name": "AI-competitie",
+        "goal": "Ontwikkel het slimste algoritme voor een agrarische uitdaging — denk aan gewasherkenning, onkruiddetectie of opbrengstvoorspelling.",
+        "rules": [
+          "Inzendingen worden beoordeeld op een gedeelde dataset en verborgen testset.",
+          "Nauwkeurigheid, generalisatie en efficiëntie van het model bepalen de score.",
+          "Gebruikte data, code en getrainde modellen moeten reproduceerbaar worden aangeleverd.",
+          "Vooraf getrainde modellen zijn toegestaan, mits de bron duidelijk wordt vermeld."
+        ]
+      }
+    ],
     "programTitle": "Programma-overzicht",
     "timeline": [
       { "title": "Inschrijving", "period": "September – Oktober", "desc": "Meld je team aan en kies je minor." },
