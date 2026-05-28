@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,7 +15,10 @@ interface VideoHeroProps {
  * De video blijft in beeld terwijl je door deze sectie scrollt, en de
  * tekstblokken schuiven er overheen — meteen vanaf de bovenkant.
  */
-const VideoHero = ({ videoSrc = "/videos/hero-web.mp4", poster }: VideoHeroProps) => (
+const VideoHero = ({ videoSrc = "/videos/hero-web.mp4", poster }: VideoHeroProps) => {
+  const { t } = useTranslation();
+
+  return (
   <section className="relative -mt-16">
     {/* Vastgezette video-laag: blijft in beeld zolang je door de sectie scrollt.
         De gradient dient als nette fallback voordat de video laadt of als die ontbreekt. */}
@@ -40,16 +44,16 @@ const VideoHero = ({ videoSrc = "/videos/hero-web.mp4", poster }: VideoHeroProps
       {/* Eerste blok: meteen zichtbaar bovenaan. */}
       <div className="container flex min-h-screen flex-col items-center justify-center text-center">
         <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg animate-fade-in-up">
-          Doe mee aan de<br />
-          <span className="text-agrobot-mint">Agrobotcompetitie</span>
+          {t("hero.title1")}<br />
+          <span className="text-agrobot-mint">{t("hero.titleHighlight")}</span>
         </h1>
         <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 drop-shadow-md">
-          Bouw de landbouwrobot van de toekomst. Leer, innoveer en win — samen met jouw team.
+          {t("hero.subtitle")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/inschrijven">
             <Button size="lg" className="bg-agrobot-mint text-agrobot-dark hover:bg-agrobot-light font-bold text-base px-8">
-              Schrijf je in
+              {t("hero.register")}
             </Button>
           </Link>
           <Link to="/regels">
@@ -58,7 +62,7 @@ const VideoHero = ({ videoSrc = "/videos/hero-web.mp4", poster }: VideoHeroProps
               variant="outline"
               className="border-white/40 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm font-semibold text-base px-8"
             >
-              Meer info
+              {t("hero.moreInfo")}
             </Button>
           </Link>
         </div>
@@ -71,11 +75,10 @@ const VideoHero = ({ videoSrc = "/videos/hero-web.mp4", poster }: VideoHeroProps
       <div className="container flex min-h-screen items-center justify-center text-center">
         <div className="max-w-3xl">
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">
-            Klaar voor de uitdaging?
+            {t("hero.challengeTitle")}
           </h2>
           <p className="text-lg md:text-xl text-white/90 leading-relaxed drop-shadow-md">
-            Ontwerp, bouw en programmeer een autonome robot die echte landbouwtaken uitvoert.
-            Samen met je team strijd je om de titel — en doe je ervaring op die je nergens anders krijgt.
+            {t("hero.challengeText")}
           </p>
         </div>
       </div>
@@ -84,6 +87,7 @@ const VideoHero = ({ videoSrc = "/videos/hero-web.mp4", poster }: VideoHeroProps
     {/* Zachte overgang naar de witte pagina-achtergrond eronder. */}
     <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-32 bg-gradient-to-b from-transparent to-background" />
   </section>
-);
+  );
+};
 
 export default VideoHero;

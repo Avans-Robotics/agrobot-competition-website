@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Home",
+    "rules": "Rules & Programme",
+    "register": "Register",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "registerCta": "Sign up"
+  },
+  "language": {
+    "label": "Language",
+    "nl": "Dutch",
+    "en": "English"
+  },
+  "footer": {
+    "tagline": "The Agrobot Competition challenges students to build innovative robots for the agriculture of the future.",
+    "pagesHeading": "Pages",
+    "contactHeading": "Contact",
+    "rights": "All rights reserved."
+  },
+  "hero": {
+    "title1": "Take part in the",
+    "titleHighlight": "Agrobot Competition",
+    "subtitle": "Build the agricultural robot of the future. Learn, innovate and win — together with your team.",
+    "register": "Sign up",
+    "moreInfo": "Learn more",
+    "challengeTitle": "Ready for the challenge?",
+    "challengeText": "Design, build and program an autonomous robot that performs real agricultural tasks. Together with your team you compete for the title — and gain experience you won't find anywhere else."
+  },
+  "home": {
+    "whyTitle": "Why take part?",
+    "whySubtitle": "The Agrobot Competition offers a unique chance to develop your technical and personal skills.",
+    "features": [
+      { "title": "Teamwork", "description": "Collaborate with students from different programmes and develop your teamwork skills." },
+      { "title": "Technology", "description": "Learn to work with robotics, sensors, AI and other cutting-edge technologies." },
+      { "title": "Competition", "description": "Compete for the grand prize and show what your team can achieve." },
+      { "title": "Experience", "description": "Gain hands-on experience that strengthens your CV and prepares you for the future." }
+    ],
+    "videoTitle": "See the competition in action",
+    "videoSubtitle": "Discover what previous participants built and experienced.",
+    "impressionTitle": "Impression",
+    "impressions": [
+      "Students working on their robot",
+      "Robot in the field",
+      "Teamwork during the competition"
+    ],
+    "ctaTitle": "Ready to join?",
+    "ctaText": "Sign up today and become part of the Agrobot Competition. The future of agriculture starts with you!",
+    "ctaButton": "Sign up"
+  },
+  "rules": {
+    "heroTitle": "Rules & Programme",
+    "heroSubtitle": "Everything you need to know about the setup, the programme and the rules of the Agrobot Competition.",
+    "programTitle": "Programme overview",
+    "timeline": [
+      { "title": "Registration", "period": "September – October", "desc": "Register your team and choose your minor." },
+      { "title": "Kickoff", "period": "November", "desc": "Introduction, team formation and first workshops." },
+      { "title": "Build phase", "period": "December – March", "desc": "Design, build and test your agrobot." },
+      { "title": "Competition day", "period": "April", "desc": "Show off your robot and compete for the grand prize!" }
+    ],
+    "rulesTitle": "Rules",
+    "rulesList": [
+      "Each team consists of at least 3 and at most 6 students.",
+      "The robot must be able to navigate a test field autonomously.",
+      "Use of standard safety equipment is mandatory.",
+      "All team members must be enrolled in an accredited programme.",
+      "The robot may not weigh more than 50 kg.",
+      "Teams receive a budget of €500 for materials."
+    ],
+    "downloadsTitle": "Downloads",
+    "downloadsText": "Download the full regulations and the programme booklet.",
+    "regulationsPdf": "Regulations (PDF)",
+    "programBookletPdf": "Programme booklet (PDF)"
+  },
+  "faq": {
+    "heroTitle": "Frequently asked questions",
+    "heroSubtitle": "Find answers to the most common questions about the Agrobot Competition.",
+    "categories": [
+      {
+        "title": "Goals & Themes",
+        "items": [
+          { "q": "What is the Agrobot Competition?", "a": "The Agrobot Competition is an annual student competition in which teams build an autonomous robot that performs a task in the agricultural sector — think weed control, crop monitoring or harvesting." },
+          { "q": "What is the goal of the competition?", "a": "The goal is to inspire students to come up with innovative technological solutions for the agriculture of the future." },
+          { "q": "Which themes are covered?", "a": "Robotics, artificial intelligence, precision agriculture, sustainability and collaboration are central." }
+        ]
+      },
+      {
+        "title": "Practical Information",
+        "items": [
+          { "q": "Who can take part?", "a": "All students at Dutch universities of applied sciences and research universities can participate, provided they are enrolled in an accredited programme." },
+          { "q": "How big should a team be?", "a": "A team consists of at least 3 and at most 6 students." },
+          { "q": "What does participation cost?", "a": "Participation is free. Teams receive a budget of €500 for materials." },
+          { "q": "When does the competition take place?", "a": "The competition day takes place in April. Registration opens in September and closes in mid-October." }
+        ]
+      },
+      {
+        "title": "Background & Preparation",
+        "items": [
+          { "q": "Do I need programming experience?", "a": "Basic knowledge is handy but not required. You'll learn the necessary skills during workshops." },
+          { "q": "Do I have to be in a technical programme?", "a": "No! Teams benefit from diverse backgrounds — think marketing, design, project management and engineering." },
+          { "q": "How do I prepare?", "a": "Sign up for a relevant minor and join the kickoff workshops. There you'll learn everything you need." }
+        ]
+      }
+    ],
+    "inspirationTitle": "Inspiration",
+    "inspirationText": "Watch videos and images from previous editions.",
+    "gallery": ["Winning team 2025", "Robots in action"]
+  },
+  "register": {
+    "heroTitlePrefix": "Register for the",
+    "heroTitleHighlight": "Agrobot Competition",
+    "stats": [
+      { "value": "50+", "label": "Teams last year" },
+      { "value": "200+", "label": "Students" },
+      { "value": "€10,000", "label": "In prizes" }
+    ],
+    "benefitsTitle": "What's in it for you?",
+    "benefits": [
+      { "title": "Hands-on experience", "desc": "Work on a real project with robots, sensors and AI." },
+      { "title": "Study credits", "desc": "Taking part through a minor earns you ECTS credits for your studies." },
+      { "title": "Network", "desc": "Meet experts, companies and fellow students from across the country." }
+    ],
+    "testimonialsTitle": "What do previous participants say?",
+    "testimonials": [
+      { "quote": "The best experience of my studies. I learned so much about teamwork and technology.", "author": "Lisa, HAS University" },
+      { "quote": "Our robot didn't work perfectly, but the process was priceless. Recommended for everyone!", "author": "Sander, Avans University" }
+    ],
+    "deadline": "Registration deadline: 15 October 2026",
+    "applyTitle": "Sign up",
+    "applyText": "Participation in the Agrobot Competition runs through a relevant minor. Choose a minor below and fill in the form.",
+    "minorsTitle": "Relevant KOM minors",
+    "form": {
+      "name": "Full name *",
+      "namePlaceholder": "John Doe",
+      "email": "Email address *",
+      "emailPlaceholder": "john@student.avans.nl",
+      "study": "Programme *",
+      "studyPlaceholder": "E.g. Computer Science",
+      "minor": "Chosen minor *",
+      "minorPlaceholder": "Select a minor",
+      "motivation": "Motivation (optional)",
+      "motivationPlaceholder": "Why do you want to join?",
+      "submit": "Register"
+    },
+    "validation": {
+      "name": "Please enter your full name.",
+      "email": "Please enter a valid email address.",
+      "study": "Please enter your programme.",
+      "minor": "Please select a minor."
+    },
+    "toast": "Thanks for registering! We'll be in touch soon.",
+    "successTitle": "Thanks for registering!",
+    "successText": "We've received your registration. You'll receive a confirmation by email shortly.",
+    "backHome": "Back to home"
+  },
+  "contact": {
+    "heroTitle": "Contact",
+    "heroSubtitle": "Got questions about the Agrobot Competition? Feel free to get in touch.",
+    "infoTitle": "Contact details",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "mapPlaceholder": "🗺️ Map placeholder",
+    "formTitle": "Send us a message",
+    "form": {
+      "name": "Name *",
+      "namePlaceholder": "Your name",
+      "email": "Email *",
+      "emailPlaceholder": "you@email.com",
+      "subject": "Subject *",
+      "subjectPlaceholder": "What's your question about?",
+      "message": "Message *",
+      "messagePlaceholder": "Write your message...",
+      "submit": "Send"
+    },
+    "validation": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email address.",
+      "subject": "Please enter a subject.",
+      "message": "Your message is too short."
+    },
+    "toast": "Thanks for your message! We'll get back to you as soon as possible."
+  },
+  "video": {
+    "placeholder": "Video placeholder — URL will be added later"
+  },
+  "notFound": {
+    "message": "Oops! Page not found",
+    "returnHome": "Return to home"
+  }
+}

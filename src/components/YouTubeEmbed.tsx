@@ -1,15 +1,19 @@
+import { useTranslation } from "react-i18next";
+
 interface YouTubeEmbedProps {
   videoId?: string;
   title?: string;
 }
 
 const YouTubeEmbed = ({ videoId, title = "Video" }: YouTubeEmbedProps) => {
+  const { t } = useTranslation();
+
   if (!videoId) {
     return (
       <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border border-border">
         <div className="text-center text-muted-foreground">
           <div className="text-4xl mb-2">▶️</div>
-          <p className="text-sm">Video placeholder — URL wordt later toegevoegd</p>
+          <p className="text-sm">{t("video.placeholder")}</p>
         </div>
       </div>
     );
