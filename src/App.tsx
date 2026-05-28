@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 import Index from "./pages/Index";
 import Regels from "./pages/Regels";
+import Edities from "./pages/Edities";
 import Inschrijven from "./pages/Inschrijven";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
@@ -23,6 +24,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/regels" element={<Regels />} />
+            <Route path="/edities" element={<Edities />} />
             <Route path="/inschrijven" element={<Inschrijven />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />

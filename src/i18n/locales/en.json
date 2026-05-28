@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "rules": "Rules & Programme",
+    "editions": "Previous editions",
     "register": "Register",
     "faq": "FAQ",
     "contact": "Contact",
@@ -51,6 +52,32 @@
   "rules": {
     "heroTitle": "Rules & Programme",
     "heroSubtitle": "Everything you need to know about the setup, the programme and the rules of the Agrobot Competition.",
+    "tracksTitle": "Two tracks to compete in",
+    "tracksSubtitle": "Choose the track that fits your team best. Each track has its own goal and its own rules.",
+    "trackGoalLabel": "Goal",
+    "trackRulesLabel": "Rules",
+    "tracks": [
+      {
+        "name": "Engineering competition",
+        "goal": "Build a robust, autonomous agricultural robot that reliably performs a physical field task — from navigation to mechanical execution.",
+        "rules": [
+          "The robot completes a course on the test field fully autonomously.",
+          "Mechanical design, reliability and safety carry the most weight in the assessment.",
+          "A maximum weight of 50 kg and use of standard safety equipment is mandatory.",
+          "Teams document their design and build process in a technical report."
+        ]
+      },
+      {
+        "name": "AI competition",
+        "goal": "Develop the smartest algorithm for an agricultural challenge — think crop recognition, weed detection or yield prediction.",
+        "rules": [
+          "Submissions are evaluated on a shared dataset and a hidden test set.",
+          "Model accuracy, generalisation and efficiency determine the score.",
+          "Data, code and trained models used must be delivered reproducibly.",
+          "Pre-trained models are allowed, provided the source is clearly cited."
+        ]
+      }
+    ],
     "programTitle": "Programme overview",
     "timeline": [
       { "title": "Registration", "period": "September – October", "desc": "Register your team and choose your minor." },
@@ -71,6 +98,37 @@
     "downloadsText": "Download the full regulations and the programme booklet.",
     "regulationsPdf": "Regulations (PDF)",
     "programBookletPdf": "Programme booklet (PDF)"
+  },
+  "editions": {
+    "heroTitle": "Previous editions",
+    "heroSubtitle": "A look back at the participating teams, the winners and the highlights of past years.",
+    "winnerLabel": "Winner",
+    "teamsLabel": "Participating teams",
+    "galleryLabel": "Footage",
+    "placeholderNote": "Placeholder content — replace the teams, winners and photos with the real data.",
+    "list": [
+      {
+        "year": "2025",
+        "tagline": "A record number of teams and the first fully autonomous harvesting robot in the field.",
+        "winner": { "team": "Team HarvestHawks", "project": "Autonomous asparagus harvester with camera guidance" },
+        "teams": ["HarvestHawks", "FieldForce", "AgroMinds", "RootRunners", "CropCircuit", "SoilSquad", "GreenGears", "TerraBotics"],
+        "gallery": ["Winning team HarvestHawks", "Robots on the test field", "Final on competition day", "Crowd and jury"]
+      },
+      {
+        "year": "2024",
+        "tagline": "The year of precision weed control and real-time crop detection.",
+        "winner": { "team": "Team WeedWarriors", "project": "Laser weeder with real-time detection" },
+        "teams": ["WeedWarriors", "AgroMinds", "FarmPilot", "BotanyBots", "FieldForce", "Harvesters United"],
+        "gallery": ["Winning team WeedWarriors", "Weed detection in action", "Teams building"]
+      },
+      {
+        "year": "2023",
+        "tagline": "The very first edition of the Agrobot Competition.",
+        "winner": { "team": "Team SeedSowers", "project": "Autonomous row-crop seeder" },
+        "teams": ["SeedSowers", "RoboReapers", "AgriAces", "PlantPioneers", "FieldForce"],
+        "gallery": ["Winning team SeedSowers", "The first competition day", "Robots in the field"]
+      }
+    ]
   },
   "faq": {
     "heroTitle": "Frequently asked questions",
@@ -101,10 +159,7 @@
           { "q": "How do I prepare?", "a": "Sign up for a relevant minor and join the kickoff workshops. There you'll learn everything you need." }
         ]
       }
-    ],
-    "inspirationTitle": "Inspiration",
-    "inspirationText": "Watch videos and images from previous editions.",
-    "gallery": ["Winning team 2025", "Robots in action"]
+    ]
   },
   "register": {
     "heroTitlePrefix": "Register for the",

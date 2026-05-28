@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "rules": "Regels & Programma",
+    "editions": "Eerdere edities",
     "register": "Inschrijven",
     "faq": "FAQ",
     "contact": "Contact",
@@ -51,6 +52,32 @@
   "rules": {
     "heroTitle": "Regels & Programma",
     "heroSubtitle": "Alles wat je moet weten over de opzet, het programma en de spelregels van de Agrobotcompetitie.",
+    "tracksTitle": "Twee tracks om aan mee te doen",
+    "tracksSubtitle": "Kies de track die het beste bij jouw team past. Elke track heeft een eigen doel en eigen spelregels.",
+    "trackGoalLabel": "Doel",
+    "trackRulesLabel": "Spelregels",
+    "tracks": [
+      {
+        "name": "Engineering-competitie",
+        "goal": "Bouw een robuuste, autonome landbouwrobot die een fysieke veldtaak betrouwbaar uitvoert — van navigatie tot mechanische uitvoering.",
+        "rules": [
+          "De robot legt volledig autonoom een parcours op het testveld af.",
+          "Mechanisch ontwerp, betrouwbaarheid en veiligheid wegen het zwaarst in de beoordeling.",
+          "Een maximaal gewicht van 50 kg en gebruik van standaard veiligheidsmiddelen is verplicht.",
+          "Teams documenteren hun ontwerp- en bouwproces in een technisch verslag."
+        ]
+      },
+      {
+        "name": "AI-competitie",
+        "goal": "Ontwikkel het slimste algoritme voor een agrarische uitdaging — denk aan gewasherkenning, onkruiddetectie of opbrengstvoorspelling.",
+        "rules": [
+          "Inzendingen worden beoordeeld op een gedeelde dataset en verborgen testset.",
+          "Nauwkeurigheid, generalisatie en efficiëntie van het model bepalen de score.",
+          "Gebruikte data, code en getrainde modellen moeten reproduceerbaar worden aangeleverd.",
+          "Vooraf getrainde modellen zijn toegestaan, mits de bron duidelijk wordt vermeld."
+        ]
+      }
+    ],
     "programTitle": "Programma-overzicht",
     "timeline": [
       { "title": "Inschrijving", "period": "September – Oktober", "desc": "Meld je team aan en kies je minor." },
@@ -71,6 +98,37 @@
     "downloadsText": "Download het volledige reglement en het programmaboekje.",
     "regulationsPdf": "Reglement (PDF)",
     "programBookletPdf": "Programmaboekje (PDF)"
+  },
+  "editions": {
+    "heroTitle": "Eerdere edities",
+    "heroSubtitle": "Een terugblik op de deelnemende teams, de winnaars en de hoogtepunten van afgelopen jaren.",
+    "winnerLabel": "Winnaar",
+    "teamsLabel": "Deelnemende teams",
+    "galleryLabel": "Beeldmateriaal",
+    "placeholderNote": "Voorbeeldinhoud — vervang de teams, winnaars en foto's door de echte gegevens.",
+    "list": [
+      {
+        "year": "2025",
+        "tagline": "Recordaantal teams en de eerste volledig autonome oogstrobot op het veld.",
+        "winner": { "team": "Team HarvestHawks", "project": "Autonome aspergesteker met camerageleiding" },
+        "teams": ["HarvestHawks", "FieldForce", "AgroMinds", "RootRunners", "CropCircuit", "SoilSquad", "GreenGears", "TerraBotics"],
+        "gallery": ["Winnend team HarvestHawks", "Robots op het testveld", "Finale op de competitiedag", "Publiek en jury"]
+      },
+      {
+        "year": "2024",
+        "tagline": "Het jaar van precisie-onkruidbestrijding en realtime gewasdetectie.",
+        "winner": { "team": "Team WeedWarriors", "project": "Laser-onkruidbestrijder met realtime detectie" },
+        "teams": ["WeedWarriors", "AgroMinds", "FarmPilot", "BotanyBots", "FieldForce", "Harvesters United"],
+        "gallery": ["Winnend team WeedWarriors", "Onkruiddetectie in actie", "Teams aan het bouwen"]
+      },
+      {
+        "year": "2023",
+        "tagline": "De allereerste editie van de Agrobotcompetitie.",
+        "winner": { "team": "Team SeedSowers", "project": "Autonome zaaimachine voor rijenteelt" },
+        "teams": ["SeedSowers", "RoboReapers", "AgriAces", "PlantPioneers", "FieldForce"],
+        "gallery": ["Winnend team SeedSowers", "De eerste competitiedag", "Robots in het veld"]
+      }
+    ]
   },
   "faq": {
     "heroTitle": "Veelgestelde vragen",
@@ -101,10 +159,7 @@
           { "q": "Hoe bereid ik me voor?", "a": "Schrijf je in voor een relevante minor en neem deel aan de kickoff-workshops. Daar leer je alles wat je nodig hebt." }
         ]
       }
-    ],
-    "inspirationTitle": "Inspiratie",
-    "inspirationText": "Bekijk video's en beelden van eerdere edities.",
-    "gallery": ["Winnend team 2025", "Robots in actie"]
+    ]
   },
   "register": {
     "heroTitlePrefix": "Schrijf je in voor de",

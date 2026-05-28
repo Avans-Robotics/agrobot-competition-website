@@ -13,6 +13,7 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", label: t("nav.home") },
     { to: "/regels", label: t("nav.rules") },
+    { to: "/edities", label: t("nav.editions") },
     { to: "/inschrijven", label: t("nav.register") },
     { to: "/faq", label: t("nav.faq") },
     { to: "/contact", label: t("nav.contact") },
