@@ -1,19 +1,22 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/regels", label: "Regels & Programma" },
-  { to: "/inschrijven", label: "Inschrijven" },
-  { to: "/faq", label: "FAQ" },
-  { to: "/contact", label: "Contact" },
-];
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
+
+  const navLinks = [
+    { to: "/", label: t("nav.home") },
+    { to: "/regels", label: t("nav.rules") },
+    { to: "/inschrijven", label: t("nav.register") },
+    { to: "/faq", label: t("nav.faq") },
+    { to: "/contact", label: t("nav.contact") },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border">
@@ -37,17 +40,21 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
+          <LanguageSwitcher className="ml-2" />
           <Link to="/inschrijven">
             <Button className="ml-2 bg-agrobot-mint text-agrobot-dark hover:bg-agrobot-light font-semibold">
-              Schrijf je in
+              {t("nav.registerCta")}
             </Button>
           </Link>
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden p-2" onClick={() => setOpen(!open)}>
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher />
+          <button className="p-2" onClick={() => setOpen(!open)} aria-label="Menu">
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -70,7 +77,7 @@ const Navbar = () => {
             ))}
             <Link to="/inschrijven" onClick={() => setOpen(false)}>
               <Button className="w-full mt-2 bg-agrobot-mint text-agrobot-dark hover:bg-agrobot-light font-semibold">
-                Schrijf je in
+                {t("nav.registerCta")}
               </Button>
             </Link>
           </div>

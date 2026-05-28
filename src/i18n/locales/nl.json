@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Home",
+    "rules": "Regels & Programma",
+    "register": "Inschrijven",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "registerCta": "Schrijf je in"
+  },
+  "language": {
+    "label": "Taal",
+    "nl": "Nederlands",
+    "en": "Engels"
+  },
+  "footer": {
+    "tagline": "De Agrobotcompetitie daagt studenten uit om innovatieve robots te bouwen voor de landbouw van de toekomst.",
+    "pagesHeading": "Pagina's",
+    "contactHeading": "Contact",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "hero": {
+    "title1": "Doe mee aan de",
+    "titleHighlight": "Agrobotcompetitie",
+    "subtitle": "Bouw de landbouwrobot van de toekomst. Leer, innoveer en win — samen met jouw team.",
+    "register": "Schrijf je in",
+    "moreInfo": "Meer info",
+    "challengeTitle": "Klaar voor de uitdaging?",
+    "challengeText": "Ontwerp, bouw en programmeer een autonome robot die echte landbouwtaken uitvoert. Samen met je team strijd je om de titel — en doe je ervaring op die je nergens anders krijgt."
+  },
+  "home": {
+    "whyTitle": "Waarom meedoen?",
+    "whySubtitle": "De Agrobotcompetitie biedt een unieke kans om je technische en persoonlijke vaardigheden te ontwikkelen.",
+    "features": [
+      { "title": "Teamwork", "description": "Werk samen met studenten van verschillende opleidingen en ontwikkel je samenwerkingsvaardigheden." },
+      { "title": "Technologie", "description": "Leer werken met robotica, sensoren, AI en andere cutting-edge technologieën." },
+      { "title": "Competitie", "description": "Strijd mee om de hoofdprijs en laat zien wat jouw team kan bereiken." },
+      { "title": "Ervaring", "description": "Doe praktijkervaring op die je CV versterkt en je voorbereidt op de toekomst." }
+    ],
+    "videoTitle": "Bekijk de competitie in actie",
+    "videoSubtitle": "Ontdek wat eerdere deelnemers hebben gebouwd en ervaren.",
+    "impressionTitle": "Sfeerimpressie",
+    "impressions": [
+      "Studenten werken aan hun robot",
+      "Robot op het landbouwveld",
+      "Teamwork tijdens de competitie"
+    ],
+    "ctaTitle": "Klaar om mee te doen?",
+    "ctaText": "Schrijf je vandaag nog in en word onderdeel van de Agrobotcompetitie. De toekomst van landbouw begint bij jou!",
+    "ctaButton": "Schrijf je in"
+  },
+  "rules": {
+    "heroTitle": "Regels & Programma",
+    "heroSubtitle": "Alles wat je moet weten over de opzet, het programma en de spelregels van de Agrobotcompetitie.",
+    "programTitle": "Programma-overzicht",
+    "timeline": [
+      { "title": "Inschrijving", "period": "September – Oktober", "desc": "Meld je team aan en kies je minor." },
+      { "title": "Kickoff", "period": "November", "desc": "Introductie, teamvorming en eerste workshops." },
+      { "title": "Bouwfase", "period": "December – Maart", "desc": "Ontwerp, bouw en test je agrobot." },
+      { "title": "Competitiedag", "period": "April", "desc": "Laat je robot zien en strijd om de hoofdprijs!" }
+    ],
+    "rulesTitle": "Spelregels",
+    "rulesList": [
+      "Elk team bestaat uit minimaal 3 en maximaal 6 studenten.",
+      "De robot moet autonoom kunnen navigeren op een testveld.",
+      "Gebruik van standaard veiligheidsmiddelen is verplicht.",
+      "Alle teamleden moeten ingeschreven zijn bij een erkende opleiding.",
+      "De robot mag niet zwaarder zijn dan 50 kg.",
+      "Teams krijgen een budget van €500 voor materialen."
+    ],
+    "downloadsTitle": "Downloads",
+    "downloadsText": "Download het volledige reglement en het programmaboekje.",
+    "regulationsPdf": "Reglement (PDF)",
+    "programBookletPdf": "Programmaboekje (PDF)"
+  },
+  "faq": {
+    "heroTitle": "Veelgestelde vragen",
+    "heroSubtitle": "Vind antwoorden op de meest gestelde vragen over de Agrobotcompetitie.",
+    "categories": [
+      {
+        "title": "Doelen & Thema's",
+        "items": [
+          { "q": "Wat is de Agrobotcompetitie?", "a": "De Agrobotcompetitie is een jaarlijkse studentencompetitie waarin teams een autonome robot bouwen die een taak uitvoert in de agrarische sector. Denk aan onkruidbestrijding, gewasmonitoring of oogsten." },
+          { "q": "Wat is het doel van de competitie?", "a": "Het doel is om studenten te inspireren om innovatieve technologische oplossingen te bedenken voor de landbouw van de toekomst." },
+          { "q": "Welke thema's komen aan bod?", "a": "Robotica, kunstmatige intelligentie, precisielandbouw, duurzaamheid en samenwerking staan centraal." }
+        ]
+      },
+      {
+        "title": "Praktische Informatie",
+        "items": [
+          { "q": "Wie kan meedoen?", "a": "Alle HBO- en WO-studenten in Nederland kunnen deelnemen, mits zij zijn ingeschreven bij een erkende opleiding." },
+          { "q": "Hoe groot moet een team zijn?", "a": "Een team bestaat uit minimaal 3 en maximaal 6 studenten." },
+          { "q": "Wat kost deelname?", "a": "Deelname is gratis. Teams ontvangen een budget van €500 voor materialen." },
+          { "q": "Wanneer vindt de competitie plaats?", "a": "De competitiedag vindt plaats in april. De inschrijving opent in september en sluit half oktober." }
+        ]
+      },
+      {
+        "title": "Achtergrond & Voorbereiding",
+        "items": [
+          { "q": "Heb ik programmeerervaring nodig?", "a": "Basiskennis is handig, maar niet vereist. Tijdens workshops leer je de benodigde vaardigheden." },
+          { "q": "Moet ik een technische opleiding volgen?", "a": "Nee! Teams hebben baat bij diverse achtergronden — denk aan marketing, design, projectmanagement en techniek." },
+          { "q": "Hoe bereid ik me voor?", "a": "Schrijf je in voor een relevante minor en neem deel aan de kickoff-workshops. Daar leer je alles wat je nodig hebt." }
+        ]
+      }
+    ],
+    "inspirationTitle": "Inspiratie",
+    "inspirationText": "Bekijk video's en beelden van eerdere edities.",
+    "gallery": ["Winnend team 2025", "Robots in actie"]
+  },
+  "register": {
+    "heroTitlePrefix": "Schrijf je in voor de",
+    "heroTitleHighlight": "Agrobotcompetitie",
+    "stats": [
+      { "value": "50+", "label": "Teams vorig jaar" },
+      { "value": "200+", "label": "Studenten" },
+      { "value": "€10.000", "label": "Aan prijzen" }
+    ],
+    "benefitsTitle": "Wat levert het je op?",
+    "benefits": [
+      { "title": "Praktijkervaring", "desc": "Werk aan een echt project met robots, sensoren en AI." },
+      { "title": "Studiepunten", "desc": "Deelname via een minor levert je EC's op voor je studie." },
+      { "title": "Netwerk", "desc": "Ontmoet experts, bedrijven en medestudenten uit heel Nederland." }
+    ],
+    "testimonialsTitle": "Wat zeggen eerdere deelnemers?",
+    "testimonials": [
+      { "quote": "De beste ervaring van mijn studietijd. Ik heb zoveel geleerd over samenwerken en technologie.", "author": "Lisa, HAS Hogeschool" },
+      { "quote": "Onze robot werkte niet perfect, maar het proces was onbetaalbaar. Aanrader voor iedereen!", "author": "Sander, Avans Hogeschool" }
+    ],
+    "deadline": "Deadline inschrijving: 15 oktober 2026",
+    "applyTitle": "Meld je aan",
+    "applyText": "Deelname aan de Agrobotcompetitie loopt via een relevante minor. Kies hieronder een minor en vul het formulier in.",
+    "minorsTitle": "Relevante KOM-minoren",
+    "form": {
+      "name": "Volledige naam *",
+      "namePlaceholder": "Jan de Vries",
+      "email": "E-mailadres *",
+      "emailPlaceholder": "jan@student.avans.nl",
+      "study": "Opleiding *",
+      "studyPlaceholder": "Bijv. Technische Informatica",
+      "minor": "Gekozen minor *",
+      "minorPlaceholder": "Selecteer een minor",
+      "motivation": "Motivatie (optioneel)",
+      "motivationPlaceholder": "Waarom wil je meedoen?",
+      "submit": "Inschrijven"
+    },
+    "validation": {
+      "name": "Vul je volledige naam in.",
+      "email": "Vul een geldig e-mailadres in.",
+      "study": "Vul je opleiding in.",
+      "minor": "Selecteer een minor."
+    },
+    "toast": "Bedankt voor je inschrijving! We nemen snel contact op.",
+    "successTitle": "Bedankt voor je inschrijving!",
+    "successText": "We hebben je aanmelding ontvangen. Je ontvangt binnenkort een bevestiging per e-mail.",
+    "backHome": "Terug naar home"
+  },
+  "contact": {
+    "heroTitle": "Contact",
+    "heroSubtitle": "Heb je vragen over de Agrobotcompetitie? Neem gerust contact met ons op.",
+    "infoTitle": "Contactgegevens",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefoon",
+    "locationLabel": "Locatie",
+    "mapPlaceholder": "🗺️ Kaart placeholder",
+    "formTitle": "Stuur ons een bericht",
+    "form": {
+      "name": "Naam *",
+      "namePlaceholder": "Je naam",
+      "email": "E-mail *",
+      "emailPlaceholder": "je@email.nl",
+      "subject": "Onderwerp *",
+      "subjectPlaceholder": "Waar gaat je vraag over?",
+      "message": "Bericht *",
+      "messagePlaceholder": "Schrijf je bericht...",
+      "submit": "Versturen"
+    },
+    "validation": {
+      "name": "Vul je naam in.",
+      "email": "Vul een geldig e-mailadres in.",
+      "subject": "Vul een onderwerp in.",
+      "message": "Je bericht is te kort."
+    },
+    "toast": "Bedankt voor je bericht! We reageren zo snel mogelijk."
+  },
+  "video": {
+    "placeholder": "Video placeholder — URL wordt later toegevoegd"
+  },
+  "notFound": {
+    "message": "Oeps! Pagina niet gevonden",
+    "returnHome": "Terug naar home"
+  }
+}
