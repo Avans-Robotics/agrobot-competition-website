@@ -12,9 +12,11 @@ dist
 dist-ssr
 *.local
 
-# Background video assets (too large for git — deploy separately)
+# Background video assets. Large source files stay out of git (deploy separately);
+# the compressed web video used by the site is committed so it ships with the build.
 public/videos/*.mp4
 public/videos/*.webm
+!public/videos/hero-web.mp4
 
 # Editor directories and files
 .vscode/*
