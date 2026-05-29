@@ -20,6 +20,7 @@ const LandingCarousel = ({ images, label = "Image" }: Props) => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
+  const pointerStart = useRef<{ x: number; y: number } | null>(null);
 
   const setTweenNodes = useCallback((api: EmblaApi) => {
     tweenNodes.current = api
@@ -99,7 +100,7 @@ const LandingCarousel = ({ images, label = "Image" }: Props) => {
 
   const onSlideClick = useCallback(
     (index: number) => {
-      if (!emblaApi || !emblaApi.clickAllowed()) return;
+      if (!emblaApi) return;
       if (index === emblaApi.selectedScrollSnap()) {
         setLightboxIndex(index);
       } else {
@@ -124,7 +125,16 @@ const LandingCarousel = ({ images, label = "Image" }: Props) => {
             >
               <button
                 type="button"
-                onClick={() => onSlideClick(i)}
+                onPointerDown={(e) => {
+                  pointerStart.current = { x: e.clientX, y: e.clientY };
+                }}
+                onClick={(e) => {
+                  const start = pointerStart.current;
+                  if (start && (Math.abs(e.clientX - start.x) > 8 || Math.abs(e.clientY - start.y) > 8)) {
+                    return; // a drag, not a click
+                  }
+                  onSlideClick(i);
+                }}
                 aria-label={
                   i === selectedIndex
                     ? `${label}: enlarge ${img.alt || ""}`.trim()

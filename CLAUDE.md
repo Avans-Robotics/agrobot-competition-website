@@ -22,11 +22,16 @@ The site is **fully bilingual: Dutch (`nl`, default/fallback) and English (`en`)
 ## Commands
 
 ```bash
-npm run dev      # vite dev server on http://localhost:8080 (HMR error overlay is DISABLED)
-npm run build    # production build (this is the real correctness gate: tsc + vite)
-npm run lint     # eslint — NOTE: pre-existing errors/warnings live in src/components/ui/* and tailwind.config.ts
-npm test         # vitest run
+npm run dev        # vite dev server on http://localhost:8080 (HMR error overlay is DISABLED)
+npm run build      # production build — ⚠️ vite only, does NOT type-check
+npx tsc --noEmit   # the REAL type-check gate — run this; `npm run build` will NOT catch type errors
+npm run lint       # eslint — NOTE: pre-existing errors/warnings live in src/components/ui/* and tailwind.config.ts
+npm test           # vitest run
 ```
+
+⚠️ **`npm run build` does not type-check.** Vite/esbuild strip types without checking them, so
+a call to a non-existent method (e.g. a removed library API) builds fine and then throws at
+runtime. Always run `npx tsc --noEmit` to actually validate types before trusting a change.
 
 Heads-up: `vite.config.ts` sets `hmr.overlay: false`, so **runtime errors are silent in the
 browser** — they won't pop a red overlay. Check the browser console, not just the page.
